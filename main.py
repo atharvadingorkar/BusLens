@@ -8,10 +8,15 @@ import joblib
 from datetime import datetime
 from config import razorpay_client, RAZORPAY_KEY_ID
 from razorpay.errors import SignatureVerificationError
-
+from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI(title="BusLens API")
 app.add_middleware(
     CORSMiddleware,
+    allow_origins=[
+        "http://localhost:63921",
+        "http://localhost:3000",
+        "http://localhost:5173",
+    ],
     allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],

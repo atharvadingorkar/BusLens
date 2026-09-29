@@ -18,7 +18,7 @@ route = [
 
 async def simulate_bus():
 
-    uri = "ws://127.0.0.1:8000/ws/live-location"
+    uri = "wss://buslens-api.onrender.com/ws/live-location"
 
     async with websockets.connect(uri) as websocket:
 

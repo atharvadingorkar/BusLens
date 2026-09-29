@@ -164,7 +164,7 @@ class _LiveTrackingScreenState
     try {
       channel = WebSocketChannel.connect(
         Uri.parse(
-          'ws://10.0.2.2:8000/ws/live-location',
+          'wss://buslens-api.onrender.com/ws/live-location',
         ),
       );
 
