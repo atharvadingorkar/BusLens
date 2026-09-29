@@ -19,5 +19,5 @@ def get_connection():
         user=DB_USER,
         password=DB_PASSWORD
     )
-
+    return psycopg2.connect(os.getenv("postgresql://neondb_owner:npg_xk8rPwB6FDhd@ep-misty-bonus-b4piitw4-pooler.c-6.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require"))
     return connection

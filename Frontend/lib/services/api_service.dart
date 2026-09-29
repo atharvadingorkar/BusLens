@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  static const String baseUrl = 'http://10.149.239.188:8000';
+  static const String baseUrl = 'https://buslens-api.onrender.com';
 
   // --------------------------------------------------
   // LOGIN
