@@ -7,7 +7,4 @@ joblib
 scikit-learn
 python-dotenv
 razorpay
-<<<<<<< Updated upstream:requirements.txt
-=======
 pydantic
->>>>>>> Stashed changes:backend/requirements.txt
