@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pydantic
+bcrypt
+pandas
+joblib
+scikit-learn
+psycopg2-binary
+python-dotenv
+razorpay
