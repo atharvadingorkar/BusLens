@@ -12,7 +12,12 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI(title="BusLens API")
 app.add_middleware(
     CORSMiddleware,
-   allow_origin_regex=r"https?://(localhost|127\.0\.0\.1):\d+$",
+    allow_origins=[
+        "http://localhost:63921",
+        "http://localhost:3000",
+        "http://localhost:5173",
+        "http://localhost:61775"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
